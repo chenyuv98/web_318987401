@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log-in page</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/validLogIn.js"></script>
+</head>
+
+<body class="pages">
+<div class="grid-container">
+    <div class= "gridConnection">
+        <header>
+            <div>
+                <h2> LOG-IN </h2>
+            </div>
+        </header>
+
+        <div class="gridLabelTitle">
+            <div class="label">
+                <form name="login" onsubmit="return validateLogInForm()">
+                    <ul>
+                        <label for="email"> Email: </label>
+                        <input type="email" class="label" name="email"> <br><br>
+
+                        <label for="password"> Password: </label>
+                        <input type="password" class="label" name="password"><br><br>
+
+                        <input type="submit" value="submit" class="button">
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer class="gridFooter">
+    Yuval Chen &copy
+    <p> Contact us! </p>
+    <p> <a href="mailto:abc@example.com"> chenyuv@post.bgu.ac.il </a></p>
+</footer>
+
+</html>
