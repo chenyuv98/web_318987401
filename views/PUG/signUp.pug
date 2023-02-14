@@ -1,0 +1,41 @@
+doctype html
+head
+  title sign-up page
+  link(rel='stylesheet' href='/stylesheets/style.css')
+  script(defer='' src='/javascripts/validSignUp.js')
+.grid-container
+  .gridConnection
+    header
+      div
+        h2  SIGN-UP
+    .gridLabelTitle
+      .label
+        form(name='signup' action='signup' method='POST')
+          ul
+            label(for='name')  Studio Name:
+            input.label(type='text' name='name')
+            br
+            br
+            label(for='email')  Email:
+            input.label(type='email' name='email')
+            br
+            br
+            label(for='password')  Choose Your Password:
+            input.label(type='password' name='password')
+            br
+            br
+            label(for='phone')  Phone number:
+            input.label(type='tel' name='phone')
+            br
+            br
+            label(for='address')  Address:
+            input.label(type='text' name='address')
+            br
+            br
+            input.button(type='submit' value='submit')
+
+footer.gridFooter
+  span Yuval Chen &amp;copy
+  p  Contact us!
+  p
+    a(href='mailto:abc@example.com') chenyuv@post.bgu.ac.il

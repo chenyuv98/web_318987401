@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-up page</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <script defer src="/public/javascripts/validSignUp.js"></script>
+</head>
+
+<body class="pages">
+<div class="grid-container">
+    <div class= "gridConnection">
+        <header>
+            <div>
+                <h2> SIGN-UP </h2>
+            </div>
+        </header>
+
+        <div class="gridLabelTitle">
+            <div class="label">
+                <form name="signup" onsubmit="return validateSignUpForm()">
+                      <ul>
+                        <label for="name"> Studio Name: </label>
+                        <input type="text" class="label" name="name"> <br><br>
+
+                        <label for="email"> Email: </label>
+                        <input type="email" class="label" name="email"> <br><br>
+
+                        <label for="password"> Choose Your Password: </label>
+                        <input type="password" class="label" name="password"> <br><br>
+
+                        <label for="phone"> Phone number: </label>
+                        <input type="tel" class="label" name="phone"> <br><br>
+
+                        <label for="address"> Address: </label>
+                        <input type="text" class="label" name="address"> <br><br>
+
+                        <input type="submit" value="submit" class="button">
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+<footer class="gridFooter">
+    Yuval Chen &copy
+    <p> Contact us! </p>
+    <p> <a href="mailto:abc@example.com">chenyuv@post.bgu.ac.il </a></p>
+</footer>
+
+</html>

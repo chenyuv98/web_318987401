@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>createTrainee</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <script defer src="/public/javascripts/validTrainees.js"></script>
+</head>
+
+<body class="pages">
+<div class="grid-container">
+    <div class= "gridNewTrainee">
+        <header>
+            <div>
+                <h2> Create A New Trainee</h2>
+            </div>
+        </header>
+
+        <div class="gridLabelTitle">
+            <div class="label">
+                <form name="createTrainee" onsubmit="return validateNewTrainee()">
+                    <label for="firstName"> First Name: </label>
+                    <input type="text" class="label" name="firstName"> <br><br>
+
+                    <label for="lastName"> Last Name: </label>
+                    <input type="text" class="label" name="lastName"> <br><br>
+
+                    <label for="phoneNumber"> Phone Number: </label>
+                    <input type="tel" class="label" name="phoneNumber"> <br><br>
+
+                    <label for="birthDate"> Birth Date: </label>
+                    <input type="date" class="label" name="birthDate"> <br><br>
+
+                    <label for="joinDate"> Join Date: </label>
+                    <input type="date" class="label" name="joinDate"> <br><br>
+
+<!--                    <label for="healthIssues"> Health Issues: </label> <br>-->
+<!--                    <input type="checkbox" id="None" name="None" value="None">-->
+<!--                    <label for="None"> None </label><br>-->
+<!--                    <input type="checkbox" id="Migraines" name="Migraines" value="Migraines">-->
+<!--                    <label for="Migraines"> Migraines </label>-->
+<!--                    <input type="checkbox" id="Knees problems" name="Knees problems" value="Knees problems">-->
+<!--                    <label for="Knees problems"> Knees problems </label><br>-->
+<!--                    <input type="checkbox" id="Back problems" name="Back problems" value="Back problems">-->
+<!--                    <label for="Back problems"> Back problems </label>-->
+<!--                    <input type="checkbox" id="Arthritis" name="Arthritis" value="Arthritis">-->
+<!--                    <label for="Arthritis"> Arthritis </label><br>-->
+<!--                    <input type="checkbox" id="Allergies" name="Allergies" value="Allergies">-->
+<!--                    <label for="Allergies"> Allergies </label>-->
+<!--                    <input type="checkbox" id="Asthma" name="Asthma" value="Asthma">-->
+<!--                    <label for="Asthma"> Asthma </label><br><br>-->
+
+                    <input type="submit" value="submit" class="button"> <!-- להעביר לטבלה מעודכנת של מתאמנים בסטודיו-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer class="gridFooter">
+    Yuval Chen &copy
+    <p> Contact us! </p>
+    <p> <a href="mailto:abc@example.com">chenyuv@post.bgu.ac.il </a></p>
+</footer>
+</html>

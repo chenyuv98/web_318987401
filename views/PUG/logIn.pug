@@ -1,0 +1,29 @@
+doctype html
+head
+  title log-in page
+  link(rel='stylesheet' href='/stylesheets/style.css')
+  script(defer='' src='/javascripts/validLogIn.js')
+.grid-container
+  .gridConnection
+    header
+      div
+        h2  LOG-IN
+    .gridLabelTitle
+      .label
+        form(name='login' action='/login' method='POST')
+          ul
+            label(for='email')  Email:
+            input.label(type='email' name='email')
+            br
+            br
+            label(for='password')  Password:
+            input.label(type='password' name='password')
+            br
+            br
+            input.button(type='submit' value='submit')
+
+footer.gridFooter
+  span Yuval Chen &amp;
+  p  Contact us!
+  p
+    a(href='mailto:abc@example.com')  chenyuv@post.bgu.ac.il

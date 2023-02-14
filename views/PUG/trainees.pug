@@ -1,0 +1,51 @@
+doctype html
+head
+  title trainees page
+  link(rel='stylesheet' href='/stylesheets/style.css')
+  script(src='/javascripts/validTrainees.js')
+.grid-container
+  .gridTrainees
+    header
+      div
+        h2  Trainees
+    .gridNavBar
+      ul.navBar
+        li
+          a(href='home') Home
+        li
+          a(href='schedule') Studio&apos;s Schedule
+        li
+          a(href='trainees') Trainees
+        li
+          a(href='logout') Log Out
+  //.gridCreateDeleteButtons
+  //  a.create_delete(href='createTrainee.html' button='')  CREATE
+  //  br
+  //  br
+  //  a.create_delete(href='trainees.html' button='')  DELETE
+table.gridTableTrainees
+  thead
+    tr
+      th Name
+      th Phone Number
+      th Birth Date
+      th Join Date
+      th Delete Trainee
+  tbody
+    each trainee in trainees
+      tr
+        td #{trainee.id}
+        td #{trainee.name}
+        td 0#{trainee.phone}
+        td #{trainee.birth_date}
+        td #{trainee.join_date}
+        td
+          form.inline(action='/trainees/'+trainee.id method="POST")
+            button(type="submit")
+              span DELETE
+
+footer.gridFooter
+  span Yuval Chen &amp;
+  p  Contact us!
+  p
+    a(href='mailto:abc@example.com') chenyuv@post.bgu.ac.il

@@ -1,0 +1,168 @@
+doctype html
+head
+  title schedule page
+  link(rel='stylesheet' href='/stylesheets/style.css')
+.grid-container
+  .gridSchedule
+    header
+      div
+        h2  My Studio&apos;s Schedule
+    .gridNavBar
+      ul.navBar
+        li
+          a(href='home') Home
+        li
+          a(href='schedule') Studio&apos;s Schedule
+        li
+          a(href='trainees') Trainees
+        li
+          a(href='logout') Log Out
+  .training-container
+    #functional.trainingType Functional
+    #calisthenics.trainingType Calisthenics
+    #yoga.trainingType Yoga
+    #pilates.trainingType Pilates
+    #spinning.trainingType Spinning
+    #deselect.trainingType Diselect
+  h5  Add selected training to the schedule
+  .schedule-container
+    .days-container
+      span.corner
+      .day Sunday
+      .day Monday
+      .day Tuesday
+      .day Wednesday
+      .day Thursday
+      .day Friday
+      .day Saturday
+    .partDay
+      span.time  8:00 - 9:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  9:00 - 10:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  10:00 - 11:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  11:00 - 12:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  12:00 - 13:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  13:00 - 14:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  14:00 - 15:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  15:00 - 16:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  16:00 - 17:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  17:00 - 18:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  18:00 - 19:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  19:00 - 20:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+    .partDay
+      span.time  20:00 - 21:00
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+      .training
+  button.deleteButton  DELETE TRAINING
+  .popupMessage-container
+    .popupMessage
+      h4 Are you sure you want to delete the training from schedule?
+      .button-container
+        #buttonYes.buttonAnswer  YES
+        #buttonNo.buttonAnswer  NO
+script(src='/javascripts/schedule.js')
+
+footer.gridFooter
+  span Yuval Chen &amp;copy
+  p  Contact us!
+  p
+    a(href='mailto:abc@example.com') chenyuv@post.bgu.ac.il

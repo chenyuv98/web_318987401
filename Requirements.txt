@@ -1,0 +1,58 @@
+routes:
+localhost:3000/trainers/create/ - create trainers table
+localhost:3000/trainers/insert/ - insert trainers to trainers table
+localhost:3000/trainers/show/ - shows all rows in trainers table
+localhost:3000/trainers/drop/ - drop all rows of trainers table
+
+localhost:3000/training/create/ - create trainings table
+localhost:3000/training/insert/ - insert data to trainings table
+localhost:3000/training/show/ - shows all data in trainings table
+localhost:3000/training/drop/ - drop trainings table
+
+localhost:3000/Training_Type/create/ - create Training_Type table
+localhost:3000/Training_Type/insert/ - insert data to Training_Type table
+localhost:3000/Training_Type/show/ - shows all data in Training_Type table
+localhost:3000/Training_Type/drop/ - drop Training_Type table
+
+localhost:3000/trainee/create/ - create trainees table
+localhost:3000/trainee/insert/ - insert trainees to trainers table
+localhost:3000/trainee/show/ - shows all rows in trainees table
+localhost:3000/trainee/drop/ - drop all rows of trainees table
+
+modules:
+cookie-parser
+express
+http-errors
+mysql2
+pug
+body-parser
+csvtojson
+
+
+queries:
+//Trainers
+CREATE TABLE IF NOT EXISTS trainers (email varchar(50) primary key, password varchar(70), studio_name varchar(50), studio_address varchar(50), studio_phone varchar(50))
+INSERT INTO trainers SET ?
+SELECT * FROM Trainers
+DROP TABLE IF EXISTS Trainers
+
+//Trainings
+CREATE TABLE IF NOT EXISTS Trainings (id int primary key, trainer varchar(70), date_time date, training_type int)
+INSERT INTO Trainings SET ?
+SELECT * FROM Trainings
+DROP TABLE Trainings IF EXISTS
+
+//TRAININGS TYPES
+CREATE TABLE IF NOT EXISTS Trainings_Types (id int, name varchar(50))
+INSERT INTO Trainings_Types SET ?
+SELECT * FROM Trainings_Types
+DROP TABLE IF EXISTS Trainings_Types
+
+//TRAINEES
+CREATE TABLE IF NOT EXISTS Trainees (id int primary key, email varchar(50), name varchar(50), phone varchar(50), birth_date date, join_date date)
+INSERT INTO Trainees SET ?
+SELECT * FROM Trainees
+DROP TABLE IF EXIST Trainees
+
+//ALL TABLES
+DROP TABLE IF EXIST Trainees, Trainings_Types, Trainings, Trainers
